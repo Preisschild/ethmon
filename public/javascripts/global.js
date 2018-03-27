@@ -183,7 +183,6 @@ function worker() {
             // Update summary
             var summaryContent = '';
             summaryContent += 'Total ETH/ETC hashrate: ' + format_stats(eth.join(';'), null, null, ', ') + '<br>';
-            summaryContent += 'Total DCR/SIA hashrate: ' + format_stats(dcr.join(';'), null, null, ', ');
             $('#minerSummary').html(summaryContent);
 
             // Display last update date/time and warning message
