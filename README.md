@@ -1,13 +1,9 @@
-# ethmon
-Claymore's Dual Ethereum+Decred GPU Miner nodejs-based web monitoring utility
+# ethmon (Preisschild Fork)
+ETHMiner ETC/ETHGPU Miner nodejs-based web monitoring utility
 
-## WARNING: this project is not being developed anymore. Do not expect any updates. rigmon is the successor of it, but it is not public (yet?)
 
-Simple web application for Claymore's Dual Ethereum+Decred GPU Miner monitoring. It provides the same functions as an embedded into EthMan application web server, but is cross-platform and open-source.
-
-More info: https://bitcointalk.org/index.php?topic=1433925
-
-Origin: https://github.com/osnwt/ethmon
+ETHMiner:   http://github.com/ethereum-mining/ethminer/
+Forked from:https://github.com/osnwt/ethmon
 
 ## Installation
 * Install nodejs and npm (http://nodejs.org) for your system (tested on MacOSX, Ubuntu and Windows)
@@ -22,14 +18,4 @@ Origin: https://github.com/osnwt/ethmon
 ## Known issues
 * On some Ubuntu releases after 'apt-get install npm' the node interpreter is called nodejs due to conflict with some other package. In that case you may need to replace "node ./bin/www" by "nodejs ./bin/www" in package.json file or better create a link from /usr/local/node to the nodejs binary 
 
-## TODO
-* Add email notifications of failures such like no response from miner or low hashrate
-* Add a feature of restarting the miner in case of failures such like high number of rejects
-* Style the web page for small screens of mobile devices (anybody?)
-* Publish a release version 1.0.0
-* ... please send your suggestions. Donations increase the probability of quick implementation
 
-## Donations
-If you find this utility useful, here are donation addresses:
-* BTC: removed as non-actual
-* ETH: removed as non-actual
