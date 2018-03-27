@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 function worker() {
     var eth = [ 0, 0, 0 ];
-    var dcr = [ 0, 0, 0 ];
+    
 
     function format_stats(stats, currency, target, splitter, skip) {
         if (!skip && stats) {
@@ -141,11 +141,9 @@ function worker() {
                         tableContent += '<td colspan="' + span + '">' + miner.offline + '</td>';
                     } else {
                         tableContent += '<td>' + miner.uptime + '</td>';
-                        tableContent += '<td>' + format_stats(miner.eth, eth, miner.target_eth, '<br>') + '</td>';
-                        tableContent += '<td>' + format_stats(miner.dcr, dcr, miner.target_dcr, '<br>', !miner.pools.split(';')[1]) + '</td>';
+                        tableContent += '<td>' + format_stats(miner.eth, eth, miner.target_eth, '<br>') + '</td>'; 
                         if (data.hashrates) {
                             tableContent += '<td>' + format_hashrates(miner.eth_hr, '<br>') + '</td>';
-                            tableContent += '<td>' + format_hashrates(miner.dcr_hr, '<br>', !miner.pools.split(';')[1]) + '</td>';
                         }
                         tableContent += '<td>' + format_temps(miner.temps, '<br>', miner.ti) + '</td>';
                         tableContent += '<td>' + format_pools(miner.pools, '<br>') + '</td>';
@@ -183,7 +181,7 @@ function worker() {
             // Update summary
             var summaryContent = '';
             summaryContent += 'Total ETH/ETC hashrate: ' + format_stats(eth.join(';'), null, null, ', ') + '<br>';
-            $('#minerSummary').html(summaryContent);
+	    $('#minerSummary').html(summaryContent);
 
             // Display last update date/time and warning message
             var lastUpdated = 'Last updated: ' + data.updated +
