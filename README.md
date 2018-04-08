@@ -6,8 +6,10 @@ ETHMiner:   http://github.com/ethereum-mining/ethminer/
 Forked from:https://github.com/osnwt/ethmon
 
 ## Installation
+* Download the newest Release and extract it
 * Install nodejs and npm (http://nodejs.org) for your system (tested on MacOSX, Ubuntu and Windows)
-* Clone this repository or download and extract files
+  - Debian: sudo apt install nodejs npm
+  - ArchLinux: pacman -S nodejs npm
 * Change to the top directory of the package
 * Install dependencies (npm install)
 * Copy config.json.sample to config.json and edit where necessary (see CONFIG.md for detailed comments and optional parameters)
@@ -19,3 +21,5 @@ Forked from:https://github.com/osnwt/ethmon
 * On some Ubuntu releases after 'apt-get install npm' the node interpreter is called nodejs due to conflict with some other package. In that case you may need to replace "node ./bin/www" by "nodejs ./bin/www" in package.json file or better create a link from /usr/local/node to the nodejs binary 
 
 
+## Todo
+Graphs
