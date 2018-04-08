@@ -1,11 +1,9 @@
 # ethmon (Preisschild Fork)
 ETHMiner ETC/ETHGPU Miner nodejs-based web monitoring utility
 
-(https://img.shields.io/github/downloads/Preisschild/ethmon/total.svg)][Releases]
-
-
 
 ETHMiner:   http://github.com/ethereum-mining/ethminer/
+
 Forked from:https://github.com/osnwt/ethmon
 
 ## Installation
