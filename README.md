@@ -8,7 +8,7 @@ Forked from:https://github.com/osnwt/ethmon
 
 ## Installation
 * Start ethminer with --api-port 3333 parameter 
-* Download the newest Release and extract it
+* Download it with ```git clone https://gitlab.com/Preisschild/ethmon.git```
 * Install nodejs and npm (http://nodejs.org) for your system (tested on MacOSX, Ubuntu and Windows)
   - Debian: sudo apt install nodejs npm
   - ArchLinux: pacman -S nodejs npm
