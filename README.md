@@ -7,6 +7,7 @@ ETHMiner:   http://github.com/ethereum-mining/ethminer/
 Forked from:https://github.com/osnwt/ethmon
 
 ## Installation
+* Start ethminer with --api-port 3333 parameter 
 * Download the newest Release and extract it
 * Install nodejs and npm (http://nodejs.org) for your system (tested on MacOSX, Ubuntu and Windows)
   - Debian: sudo apt install nodejs npm
