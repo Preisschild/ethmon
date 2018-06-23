@@ -17,10 +17,12 @@ Forked from:https://github.com/osnwt/ethmon
 * Copy config.json.sample to config.json and edit where necessary (see CONFIG.md for detailed comments and optional parameters)
 * Start the application (npm start)
 * Open web browser to localhost:3000 (or your IP:3000)
-* Enjoy
 
-## Known issues
-* On some Ubuntu releases after 'apt-get install npm' the node interpreter is called nodejs due to conflict with some other package. In that case you may need to replace "node ./bin/www" by "nodejs ./bin/www" in package.json file or better create a link from /usr/local/node to the nodejs binary 
+## Autostart
+* Install pm2: sudo install -g pm2
+* sudo pm2 startup
+* pm2 start bin/www
+* pm2 save
 
 
 
