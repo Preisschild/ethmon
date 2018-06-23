@@ -169,7 +169,7 @@ config.miners.forEach(function(item, i, arr) {
         miners.json[i] = {
             "name"       : m.name,
             "host"       : hostname(),
-            "uptime"     : moment.duration(parseInt(d.result[1]), 'minutes').format('d [days,] hh:mm'),
+            "uptime"     : moment.duration(parseFloat(d.result[1]), 'minutes').format('d [days,] hh:mm'),
             "eth"        : d.result[2],
             "dcr"        : d.result[4],
             "eth_hr"     : d.result[3],
