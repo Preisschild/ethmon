@@ -1,3 +1,6 @@
+# THE GITHUB REPOSITORY IS ONLY A MIRROR, PLESAE PUSH PRs AND ISSUES ON GITLAB
+https://gitlab.com/Preisschild/ethmon
+
 # ethmon (Preisschild Fork)
 ETHMiner ETC/ETHGPU Miner nodejs-based web monitoring utility
 
