@@ -13,19 +13,19 @@ Forked from:https://github.com/osnwt/ethmon
 * Start ethminer with --api-port 3333 parameter 
 * Download it with ```git clone https://gitlab.com/Preisschild/ethmon.git```
 * Install nodejs and npm (http://nodejs.org) for your system (tested on MacOSX, Ubuntu and Windows)
-  - Debian: sudo apt install nodejs npm
-  - ArchLinux: pacman -S nodejs npm
-* Change to the top directory of the package
-* Install dependencies (npm install)
+  - Debian/Ubuntu: ```sudo apt install nodejs npm```
+  - ArchLinux: ```pacman -S nodejs npm```
+* Change to the top directory of the package: ```cd ethmon```
+* Install dependencies: ```npm install```
 * Copy config.json.sample to config.json and edit where necessary (see CONFIG.md for detailed comments and optional parameters)
-* Start the application (npm start)
-* Open web browser to localhost:3000 (or your IP:3000)
+* Start the application: ```npm start```
+* Navigate with your web browser to ```http://IP:3000```
 
 ## Autostart
-* Install pm2: sudo install -g pm2
-* sudo pm2 startup
-* pm2 start bin/www
-* pm2 save
+* Install pm2: ```sudo install -g pm2```
+* Make pm2 startup automatically: ```sudo pm2 startup```
+* Start ethmon with pm2: ```pm2 start bin/www```
+* Save pm2s list to autostart: ```pm2 save```
 
 
 
